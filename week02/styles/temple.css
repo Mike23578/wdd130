@@ -1,6 +1,7 @@
 body{
-    
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 header, footer{
     background-color: #333;
     color: white;
@@ -23,7 +24,7 @@ section{
 
 main {
     margin: 0 auto;
-    max-width: 600px;
+    max-width: 800px;
 }
 
 h2 {
@@ -31,5 +32,9 @@ h2 {
 }
 
 picture img {
-    box-shadow: 50px 100 50px #333;
+    box-shadow: 0 0 30px #333;
+}
+
+p {
+    margin: 10px;
 }
