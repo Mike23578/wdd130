@@ -66,7 +66,7 @@ nav, p, section, article {
     background-color: rgba(255,255,255, 0.8);
     padding: 16px;
     max-width: 400px;
-    box-shadow: 0 0 10px rgb(255, 1, 1);
+    box-shadow: 0 0 20px rgb(255, 1, 1, 0.5);
 }
 
 .hero article img {
@@ -74,7 +74,7 @@ nav, p, section, article {
     width: 125 px;
     margin-left: 16px;
     border: 2px solid var(--accent2-color);
-    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    box-shadow: 0 0 8px rgb(0,0,0,0.1);
 }
 
 
