@@ -6,27 +6,38 @@
 
 main {
     max-width: 840px;
+    grid-column: 2/3;
 }
 
 nav {
     background-color: darkblue;
     padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
     color: white;
     display: block;
     padding: 20px;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 h1 {
     color: darkblue;
+    border-bottom: 1px solid #000;
 }
 
 aside {
     width: 20rem;
     text-align: center;
     position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 aside img {
@@ -37,10 +48,11 @@ aside img {
 main img {
     width: 150px;
     height: auto;
-    border: var(--borders);
+    border: 1px solid #000;
     padding: 2px;
     box-shadow: 0 0 30px gray;
     float: right;
+    margin: 1rem;
 }
 
 aside h2{
@@ -51,12 +63,18 @@ aside h2{
 
 p {
     padding: 0;
+    margin: 1rem;
 }
 
 footer {
-    margin-top: 10px;
-    border-top: var(--borders);
-    text-align: var(--overall-text-alignment);
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
+}
+
+header, .grid, footer {
+    max-width: 840px;
+    margin: 0 auto;
 }
 
 /* Class Selector */
@@ -65,6 +83,11 @@ footer {
     margin: 1rem;
     padding: 1rem;
     border: 1px solid rgb(0 0 0/ rgb(0 0 0/ 0.2));
-    background-color: bisque;
+    background-color: rgb(178, 179, 243);
     color: black;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
 }
