@@ -1,7 +1,9 @@
+/* general styles */
+
 :root {
-    --primary-color: rgba(4, 85, 131, 0.3);
+    --primary-color: rgba(10, 49, 156, 0.966);
     --secondary-color:#f4a261;
-    --accent1-color:#264653;
+    --accent1-color:#0004ff;
     --accent2-color:#e9c46a;
     --heading-font: "Times New Roma","Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
@@ -29,25 +31,82 @@ h1, h2 {
     color: var(--primary-color);
 }
 
-nav, p, section, article {
-    margin: 16px;
-    padding: 8px;
+/* Body Styles */
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+    background-color: #fff;
 }
 
-.socialmedia a {
+
+/* Header styles */
+
+header {
+    display: grid;
+    align-items: center;
+    place-items: center;
+    grid-template-columns: 30% 70%;
+    background-color: #8c94ff;
+    margin-top: 10px;
+}
+
+header img {
+    width: 120px;
+    /* border: 2px solid #000283; */
+    border-radius: 5px;
+}
+
+    /* Nav styles ---------------------------------------------------------------------------------------*/ 
+.navigation{
+    display: flex;
+    width: 500px;
+    list-style: none;
+    border: 2px solid #000283;
+    justify-content: space-around;
+}
+.navigation li {
+    flex: 1 2 0;
+    flex-wrap: wrap;
+    background-color: lightblue;
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+}
+
+.navigation a {
+    display: block;
+    color: navy;
+    padding: 0px;
     text-decoration: none;
+    font-size: 1.2rem;
 }
 
- .hero {
+    /* List items individually styles -------------------------------------------------------------------*/
+.border {
+    border-left: 2px solid #000283;
+    border-right: 2px solid #000283;
+}
+.border-right {
+    border-right: 2px solid #000283;
+}
+
+/* main styles */
+
+    /* div styles ---------------------------------------------------------------------------------------*/
+.hero {
     position: relative;
 }
 
+        /* div img styles -------------------------------------------------------------------------------*/
 .hero img {
     display: block;
     width: 100%;
     height: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
-
+        /* div h1 styles --------------------------------------------------------------------------------*/
 .hero h1 {
     position: absolute;
     top: 20px;
@@ -58,23 +117,80 @@ nav, p, section, article {
     background-color: var(--accent1-color);
     color: #fff;
 }
-
+        /* div article styles ---------------------------------------------------------------------------*/
 .hero article{
     position: absolute;
     bottom: 20px;
     left: 20px;
-    background-color: rgba(255,255,255, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 16px;
     max-width: 400px;
-    box-shadow: 0 0 20px rgb(255, 1, 1, 0.5);
+    box-shadow: 5px 5px 0px rgb(48, 118, 209);
+    border: .1px solid black;
 }
-
+            /* article img style ------------------------------------------------------------------------*/
 .hero article img {
     float: right;
-    width: 125px;
-    margin-left: 16px;
-    border: 2px solid var(--accent2-color);
-    box-shadow: 0 0 8px rgb(0,0,0,0.1);
+    width: 150px;
+    border: 2px solid rgb(0, 47, 255)
 }
+
+.center-box{
+    text-align: left;
+}
+
+    /* first section style ------------------------------------------------------------------------------------*/
+section img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.re-order {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30% 70%;
+    grid-gap: 10px;
+    margin: 10px;
+    padding: 10px;
+}     
+
+.re-order h2 {
+    grid-column: 1/4;
+    text-align: center;
+}
+
+.moved-right {
+    grid-column: 3/4;
+}
+
+    /* Second section style ------------------------------------------------------------------------------------*/
+.figures {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 30% 70%;
+    grid-gap: 10px;
+    margin: 10px;
+}
+
+.figures h2 {
+    grid-column: 1/7;
+    text-align: center;
+    margin: 2rem;
+}
+
+/* footer styles */
+footer {
+    display: grid;
+    grid-template-columns: 90% 10%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
 
 
